@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.flashcard"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_TERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/flashcard_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.flashcard.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.flashcard.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.flashcard.CategoryActivity"
+            android:label="@string/title_activity_category"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.flashcard.CardsActivity"
+            android:label="@string/title_activity_cards"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.flashcard.SingSongActivity"
+            android:label="@string/title_activity_sing_song"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.flashcard.CategoryPlayActivity"
+            android:label="@string/title_activity_category_play"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.flashcard.FindCardsActivity"
+            android:label="@string/title_activity_find_cards"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.flashcard.FillBlankCardActivity"
+            android:label="@string/title_activity_fill_blank_card"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.flashcard.PuzzleActivity"
+            android:label="@string/title_activity_puzzle"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.flashcard.PuzzleImageActivity"
+            android:label="@string/title_activity_puzzle_image"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.flashcard.DrawingActivity"
+            android:label="@string/title_activity_drawing"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>
